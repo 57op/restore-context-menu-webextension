@@ -7,7 +7,7 @@
 	"description": "Restore default context menu functionality on the sites you want.",
 
 	"icons": {
-		"48": "icons/menu.svg",
+		"48": "icons/menu-48.png",
 		"96": "icons/menu.svg"
 	},	
 	
