@@ -29,7 +29,7 @@ function saveOptions(e) {
 	}
 	
 	var urls = Array
-		.from(document.querySelectorAll("#url-list li span"))
+		.from(document.querySelectorAll("#url-list li:not(:first-child) span"))
 		.map(li => li.textContent);
 
 	browser.storage.local.set({
