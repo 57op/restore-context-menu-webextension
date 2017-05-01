@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Restore Context menu",
-	"version": "1.0",
+	"version": "1.1",
 	"author": "chuck-",
 	"homepage_url": "https://github.com/chuck-/restore-context-menu-webextension",
 	"description": "Restore default context menu functionality on the sites you want.",
@@ -16,6 +16,7 @@
 	},
 
 	"permissions": [
+		"tabs",
 		"storage",
 		"webRequest",
 		"<all_urls>"
