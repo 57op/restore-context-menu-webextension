@@ -22,7 +22,6 @@ function resetContextMenuTabs(tabs) {
 }
 
 function resetContextMenu(details) {
-	// console.log(`[resetContextMenu] Executing script at ${details.url}`);*/
 	browser.tabs.executeScript(
 		details.id || details.tabId,
 		{ code: "document.oncontextmenu = null", runAt: "document_end" }
@@ -31,5 +30,3 @@ function resetContextMenu(details) {
 
 browser.storage.local.get("urls").then(onOptionsReadyOrUpdate);
 browser.storage.onChanged.addListener(onOptionsReadyOrUpdate);
-
-console.log('[rs] Running');
